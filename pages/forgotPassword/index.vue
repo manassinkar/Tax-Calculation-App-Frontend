@@ -61,8 +61,8 @@ export default {
           })
 
         if (res.status === 200) {
-          console.log(res.data)
           this.$router.push('/login')
+          alert(res.data.message)
         } else {
           this.error = res.data.message
         }

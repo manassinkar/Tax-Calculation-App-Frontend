@@ -17,6 +17,7 @@
             <nuxt-link class="navbar-item" v-if="loggedIn" to="/dashboard">Dashboard</nuxt-link>
             <nuxt-link class="navbar-item" v-if="loggedIn" to="/dashboard/profile">My Profile</nuxt-link>
             <nuxt-link class="navbar-item" v-if="loggedIn" to="/dashboard/myCalculations">My Tax Calculations</nuxt-link>
+            <nuxt-link class="navbar-item" v-if="loggedIn" to="/dashboard/viewCatalog">View Catalog</nuxt-link>
             <button class="navbar-item btn btn-danger" v-on:click="logout" v-if="loggedIn">
               Log Out
             </button>
